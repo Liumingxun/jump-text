@@ -1,0 +1,23 @@
+{
+  "name": "jump-text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/jump-text.cjs.js",
+  "module": "dist/jump-text.esm.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup src/index.js -c rollup.config.js"
+  },
+  "author": "LuoMing",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.0-next.11",
+    "rollup": "^2.58.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {
+    "charming": "^3.0.2"
+  }
+}
