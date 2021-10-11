@@ -1,7 +1,7 @@
 // import {terser} from "rollup-plugin-terser"; // esm 混淆压缩
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
-import css from "rollup-plugin-css-porter"
+import postcss from "rollup-plugin-postcss"
 
 export default {
   input: './src/index.js',
@@ -15,6 +15,6 @@ export default {
       format: 'cjs',
     }
   ],
-  plugins: [resolve(), commonjs(), css()],
+  plugins: [resolve(), commonjs(), postcss()],
   external: ['charming']
 }
