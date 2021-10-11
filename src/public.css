@@ -1,0 +1,18 @@
+.jump {
+    display: inline-block;
+    -webkit-animation: jump_text 300ms ease-in-out;
+    -o-animation: jump_text 300ms ease-in-out;
+    animation: jump_text 300ms ease-in-out;
+}
+
+@keyframes jump_text {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -6,10 +6,14 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 
 var charming__default = /*#__PURE__*/_interopDefaultLegacy(charming);
 
-function jump_text (elem, opt={}) {
+function jump_text(elem, opt = {}) {
   charming__default["default"](elem);
-  elem.querySelectorAll('span');
-
+  let letters = elem.querySelectorAll('span');
+  for (let i = 0; i < letters.length; i++) {
+    let span = letters[i];
+    span.className = 'jump';
+    span.style.animationDelay = `${i * 50}ms`;
+  }
 }
 
 module.exports = jump_text;
