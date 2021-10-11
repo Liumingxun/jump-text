@@ -2,6 +2,9 @@
   "name": "jump-text",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "url": "https://github.com/Liumingxun/jump-text.git"
+  },
   "main": "dist/jump-text.cjs.js",
   "module": "dist/jump-text.esm.js",
   "type": "module",
